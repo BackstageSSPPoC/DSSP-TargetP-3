@@ -23,7 +23,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 
 metadata:
-  name:  DSSP-TargetP-3-${values.app_env}
+  name:  DSSP-TargetP-3
   description: Service  DSSP-TargetP-3
 
   annotations:
@@ -33,7 +33,7 @@ metadata:
     argocd/app-name:  dssp-targetp-3-qat
     backstage.io/kubernetes-id:  DSSP-TargetP-3
     backstage.io/kubernetes-namespace: qat   # ← env se namespace
-    sonarqube.org/project-key:  dssp-targetp-3-qat   # ← env se project key
+    sonarqube.org/project-key:  dssp-targetp-3  # ← env se project key
 
 spec:
   type: service
