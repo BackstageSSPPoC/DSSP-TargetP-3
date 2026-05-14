@@ -23,7 +23,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 
 metadata:
-  name: DSSP-TargetP-3-${values.app_env}
+  name: DSSP-TargetP-3-main
   description: Service DSSP-TargetP-3
 
   annotations:
@@ -32,7 +32,7 @@ metadata:
     jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-3/main
     argocd/app-name: dssp-targetp-3-dev
     backstage.io/kubernetes-id: DSSP-TargetP-3
-    sonarqube.org/project-key: dssp-targetp-3-dev   # ← env se project key
+    sonarqube.org/project-key: dssp-targetp-3-main   # ← env se project key
 
 spec:
   type: service
